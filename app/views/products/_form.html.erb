@@ -18,12 +18,14 @@
 
   <div class="field">
     <%= form.label :image_data %>
-    <%= form.text_area :image_data %>
+    <%= form.hidden_field :image, value: product.cached_image_data %>
+    <%= form.file_field :image %>
   </div>
 
   <div class="field">
     <%= form.label :video_data %>
-    <%= form.text_area :video_data %>
+    <%= form.hidden_field :video, value: product.cached_video_data %>
+    <%= form.file_field :video %>
   </div>
 
   <div class="actions">
