@@ -1,7 +1,7 @@
 class VideoUploader < Shrine
   s3_options = {
-    access_key_id: 'test',
-    secret_access_key: 'test',
+    access_key_id: 'admin',
+    secret_access_key: 'password',
     endpoint: 'http://localhost:9000',
     bucket: 'test',
     region: 'ap-northeast-1',
